@@ -42,8 +42,8 @@ class FedexRateServiceRequest(FedexBaseService):
         the data structure and get it ready for the WSDL request.
         """
 
-	# Default behavior is to not request transit information
-	self.ReturnTransitAndCommit = False
+        # Default behavior is to not request transit information
+        self.ReturnTransitAndCommit = False
 
         # This is the primary data structure for processShipment requests.
         self.RequestedShipment = self.client.factory.create('RequestedShipment')
